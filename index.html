@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="rockindex.css">
+</head>
+
+
+
+<body>
+  <div class="container">
+    <p id="title">
+    Rock-Paper-Scissors Game
+  </p>
+  <p id="instruction"> Pick one to start Game </p>
+  
+  <div class="buttons">
+  <button onclick="
+    playGame('Rock');
+  "><img src="image/rock.png" alt=""></button>
+
+  <button onclick="
+      playGame('Paper');
+      "> <img src="image/paper.png" alt=""></button>
+  
+  <button onclick="
+     playGame('Scissors');
+   " > <img src="image/Scissor.png" alt=""> </button>
+   
+   
+   <button onclick="
+   resetScore()
+   ">Reset Score</button>
+
+  </div>
+   <div class="imagesection">
+      <div class="user-choice">
+        <h4> You </h4>
+        <img src="image/paper.png" alt="Your Move" id="gameimageplayermove">
+      </div>
+
+      <div class="computer-choice">
+        <h4> Computer </h4>
+        <img src="image/paper.png" alt="Computer Move" id="gameimagecomputermove">
+      </div>
+   </div>
+
+
+
+
+   <div>
+    <p id="resultTitle"></p>
+   </div>
+
+   <div>
+    <p id="playerScore"> Your Score</p>
+   </div>
+
+</div>
+  
+</body>
+
+<script src="rockindex.js">  
+    
+
+</script>
+</html>
